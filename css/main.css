@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+}
+
+body {
+    background-color: rgb(33, 34, 37);
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width:750px) {
+    .menu {
+        width: 70px;
+        height: 100vh;
+        background-color: rgb(47, 43, 53);
+        float: left;
+        text-align: center;
+        display: flex;
+    }
+    .menu .icons {
+        margin: auto;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+}
+
+@media (max-width:750px) {
+    .menu {
+        width: 100%;
+        background-color: rgb(47, 43, 53);
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    .menu .icons {
+        margin: auto;
+        width: 200px;
+        display: flex;
+    }
+}
+
+.menu .icons a {
+    margin: auto;
+}
+
+.menu .icons a i { 
+    transition: all 300ms ease;
+    font-size: 30px;
+    margin: auto;
+}
+
+.menu a i:hover {
+    transform: scale(1.3);
+    color: rgb(215, 209, 255);
+}
+
+.menu a i:hover::after { 
+    content: attr(data-title);
+    background-color: rgba(60, 55, 65, 0.9); 
+    font-size: 10px;
+    margin-left: 22px;
+    padding: 5px 10px;
+    border: solid rgb(57, 52, 62) 2px;
+    border-radius: 10px;
+    position: absolute;
+    letter-spacing: 1.5px;
+    line-height: 13px;
+}
+
+#active {
+    color: grey;
+}
+
+
+.main {
+    height: 100vh;
+    display: flex;
+}
+
+
+.main > .text {
+    margin: auto;
+    margin-left: 100px;
+    width: 100%;
+}
+
+@media(max-width:750px) {
+    .main {flex-wrap: wrap; height: auto;}
+    .main > .text {
+        margin-left: 0px; 
+        margin-top: 40px; 
+        text-align: center; 
+        width: 100%;
+    }
+    .main .letter {
+        margin-top: 35px;
+    }
+}
+
+.main > .text > h1 {
+    font-size: 65px;
+    font-weight: 400;
+}
+
+#symbols {
+    transition: text-shadow 600ms ease;
+    color: rgb(255, 255, 255);
+}
+
+.main > .text > h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.main > .text > p {
+    color: rgb(73, 67, 82);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.main > .letter {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main > .letter > .star {
+    width: 50px;
+    position: absolute;
+    fill: white;
+    transition: all 500ms ease-in-out;
+    opacity: 0;
+}
+
+.main > .letter > .s1 {
+    right: 200px;
+    bottom: 40px;
+}
+
+.main > .letter > .s2 {
+    right: 150px;
+    top: 30px;
+}
+
+.main > .letter > .s3 {
+    right: 50px;
+    top: 50%;
+}
+
+.main > .letter > .s4 {
+    right: 50%;
+    top: 70%;
+}
+
+.main > .letter > .s5 {
+    right: 45%;
+    top: 20%;
+}
+
+@media (max-width:850px){
+    .main > .letter > .star {
+        display: none;
+    }
+}
+
+.main > .letter .animate {
+    font-size: 250px;
+    color: rgb(127, 127, 127);
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 16px 15px 26px 0px rgba(114, 39, 185, 0.99); 
+    box-shadow: 0px 10px 13px -7px #000000, 16px 15px 26px 0px rgba(114, 39, 185, 0.99);
+    margin: auto;
+    transform: rotate3d(2, -1, 2, 60deg);
+    transition: all 600ms ease;
+}
+
+.main > .letter:hover .animate{
+    color: white;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 66px 80px 26px 0px rgba(176,90,255,0.99); 
+    box-shadow: 0px 10px 13px -7px #000000, 66px 80px 26px 0px rgba(176,90,255,0.99);
+    transform: translateY(-70px) rotate3d(2, -1, 2, 60deg);
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #fff 0px 0px 30px, #FFf 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+#symbols.active {
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #fff 0px 0px 30px, #FFf 0px 0px 40px, #FF2D95 0px 0px 50px, #FF2D95 0px 0px 75px;
+}
+
+
+
+
+
+
