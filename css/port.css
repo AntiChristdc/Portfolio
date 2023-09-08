@@ -104,12 +104,14 @@ body {
 
     .main .card {
         margin: auto;
+        width: 400px;
     }
 }
 
 @media (max-width: 850px){
     .main .card {
         margin: 35px auto;
+        width: 400px;
     }
 }
 
@@ -139,7 +141,7 @@ body {
 
 .main .card {
     border: 2px solid rgb(47, 43, 53);
-    width: 400px;
+    /* width: 400px; */
     border-radius: 15px;
     overflow: hidden;
     text-align: center;
