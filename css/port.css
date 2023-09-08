@@ -11,7 +11,7 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width:1000px) {
+/* @media (min-width:1000px) {
     .menu {
         width: 70px;
         height: 100vh;
@@ -29,7 +29,7 @@ body {
     }
 }
 
-@media (max-width:1000px) {
+@media (max-width:1000px) { */
     .menu {
         width: 100%;
         background-color: rgb(47, 43, 53);
@@ -42,7 +42,7 @@ body {
         width: 200px;
         display: flex;
     }
-}
+/* } */
 
 .menu .icons a {
     margin: auto;
@@ -77,15 +77,6 @@ body {
 }
 
 
-.main .card {
-    border: 2px solid rgb(47, 43, 53);
-    width: 400px;
-    border-radius: 15px;
-    overflow: hidden;
-    text-align: center;
-    line-height: 25px;
-}
-
 .main .card h1 {
     margin-top: 15px;
     font-size: 30px;
@@ -108,6 +99,7 @@ body {
         display: flex;
         height: 100vh;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .main .card {
@@ -132,7 +124,7 @@ body {
 }
 
 .main .card:hover {
-    scale: 1.1;
+    scale: 1.03;
     border-color: rgba(114, 39, 185, 0.99);
     background-color: rgb(44, 37, 51);
 }
@@ -145,3 +137,13 @@ body {
     color: rgba(114, 39, 185, 0.99);
 }
 
+.main .card {
+    border: 2px solid rgb(47, 43, 53);
+    width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 30px ;
+    margin-top: 30px;
+}
